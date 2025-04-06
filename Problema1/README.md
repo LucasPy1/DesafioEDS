@@ -114,4 +114,25 @@ ORDER BY Count(*) DESC;
 
 # Problema 4
 
+Agora, para cada conjunto de pacientes repetidos, precisamos retornar somente aqueles com data de atualização mais recente.
+Para isso, utilizaremos o seguinte código:
+```sql
+
+-- O p.* é um nome para a tabela, dado mais abaixo. O comando [apelido].* Puxa todos os elementos dela (nome, cpf...)
+SELECT p.*
+FROM stg_prontuario_PACIENTE p
+INNER JOIN (
+    SELECT cpf, MAX(dt_atualizacao) AS dt_atualizacao
+    FROM stg_prontuario_PACIENTE
+    GROUP BY cpf
+    HAVING COUNT(*) > 1
+-- A checagem retorna somente os CPFs duplicados e sua data de atualização
+
+) dup ON p.cpf = dup.cpf AND p.dt_atualizacao = dup.dt_atualizacao;
+--
+-- O a última linha é uma condição: Somente juntar o resto dos dados ta tabela p se a data de atualização e CPF forem os mesmos
+-- Retorna somente as pessoas com CPFs duplicados  
+```
+![image](https://github.com/user-attachments/assets/b2eb2d95-a3e7-4cc3-aee4-dd1378c8124b)
+
 
