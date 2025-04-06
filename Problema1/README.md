@@ -134,5 +134,9 @@ INNER JOIN (
 -- Retorna somente as pessoas com CPFs duplicados  
 ```
 ![image](https://github.com/user-attachments/assets/b2eb2d95-a3e7-4cc3-aee4-dd1378c8124b)
+![image](https://github.com/user-attachments/assets/08656b86-1fa8-4b3b-9c79-37cae77d100f)
+
+
+# Problema 5
 
 
