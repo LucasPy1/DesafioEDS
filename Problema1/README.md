@@ -80,7 +80,7 @@ VALUES("Fernanda Dias", "1987-12-01", 50923687144, "Eliane", "2025-01-10 14:53:0
   ("Tati F", "1998-10-27", 61478230597, "Regina", "2025-01-01 01:54:27");
 
 ```
-
+# Problema 2
 Após a inserção dos dados, devemos juntar todos eles na tabela stg_prontuario_PACIENTE, utilizando o seguinte código:
 
 ```sql
@@ -94,5 +94,24 @@ SELECT nome,dt_nascimento,cpf,nome_mae, dt_atualizacao FROM stg_hospital_c;
 -- O UNION serve para remover linhas duplicadas (exatamente iguais)
 
 ```
+# Problema 3
+
+Para verificar a quantidade de valores duplicados, usei como base o CPF, já que é único de cada pessoa.
+```sql
+
+-- o COUNT faz a contagem de cada cpf e retorna em "quantidade"
+SELECT cpf, COUNT(*) AS "quantidade"
+FROM stg_prontuario_PACIENTE
+GROUP BY cpf
+HAVING COUNT (*)> 1
+ORDER BY Count(*) DESC;
+-- HAVING COUNT garante que só serão exibidos CPFs repetidos (2 aparições ou mais) 
+-- Esse último comando ordena os CPFs que mais aparecem em ordem decrescente (maior para o menor)
+
+```
+
+![image](https://github.com/user-attachments/assets/0ae2df4b-09fc-4c23-a04a-7599773cdb63)
+
+# Problema 4
 
 
