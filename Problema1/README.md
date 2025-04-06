@@ -55,6 +55,11 @@ CREATE TABLE stg_prontuario_PACIENTE(
 
 )
 ```
+Com as tabelas criadas, devemos criar dados para cada uma delas. Não há necessidade de especificar o id na inserção dos mesmos
+Para facilitar, usei o chatGPT para gerar os dados.
+
+```sql
+
 INSERT INTO stg_hospital_a(nome,dt_nascimento,cpf,nome_mae,dt_atualizacao)
 VALUES("Lucas Pereira", "2000-01-01", 12345678912, "Gertrudes", "2025-01-07 13:59:55"),
       ("Mariana Silva", "1995-07-12", 23456789012, "Bruna", "2025-01-02 09:30:45"),
@@ -62,5 +67,32 @@ VALUES("Lucas Pereira", "2000-01-01", 12345678912, "Gertrudes", "2025-01-07 13:5
       ("Mari Silv", "1995-07-12", 23456789012, "Bruna", "2025-01-05 04:35:30"),
       ("Lucas P", "2000-01-01", 12345678912, "Gertrudes", "2025-01-01 02:00:23");
 
+INSERT INTO stg_hospital_b(nome,dt_nascimento,cpf,nome_mae,dt_atualizacao)
+VALUES("Aline Costa", "1999-11-23", 35178264019, "Roberta", "2025-01-06 04:05:50"),
+  ("Bruno Rocha", "1990-07-30", 60481329754, "Helena", "2025-01-09 18:15:05"),
+  ("A Costa", "1999-11-23", 35178264019, "Roberta", "2025-05-06 03:45:40"),
+  ("Rafael Mendes", "1996-03-18", 18230745961, "Simone", "2025-01-05 00:11:29");
+
+INSERT INTO stg_hospital_c(nome,dt_nascimento,cpf,nome_mae,dt_atualizacao)
+VALUES("Fernanda Dias", "1987-12-01", 50923687144, "Eliane", "2025-01-10 14:53:00"),
+  ("Carlos Henrique", "1993-05-05", 37094218625, "Lúcia", "2025-01-07 09:47:18"),
+  ("Tatiane Freitas", "1998-10-27", 61478230597, "Regina", "2025-01-01 19:08:22"),
+  ("Tati F", "1998-10-27", 61478230597, "Regina", "2025-01-01 01:54:27");
+
+```
+
+Após a inserção dos dados, devemos juntar todos eles na tabela stg_prontuario_PACIENTE, utilizando o seguinte código:
+
+```sql
+
+INSERT INTO stg_prontuario_PACIENTE(nome,dt_nascimento,cpf,nome_mae, dt_atualizacao)
+SELECT nome,dt_nascimento,cpf,nome_mae, dt_atualizacao FROM stg_hospital_a
+UNION
+SELECT nome,dt_nascimento,cpf,nome_mae, dt_atualizacao FROM stg_hospital_b
+UNION
+SELECT nome,dt_nascimento,cpf,nome_mae, dt_atualizacao FROM stg_hospital_c;
+-- O UNION serve para remover linhas duplicadas (exatamente iguais)
+
+```
 
 
