@@ -145,6 +145,20 @@ INNER JOIN (
 ![image](https://github.com/user-attachments/assets/5b81cf6b-4e31-4154-b207-c661e0750e20)
 
 # Problema 7
+Eu modelaria a minha tabela da seguinte forma:
+- Criação da tabela stg_atendimentos:
+![image](https://github.com/user-attachments/assets/07d37edb-4b31-41be-a0ad-2f3ba25be90c)
+
+> tp_atendimento -> tipo do atendimento
+
+> dt_atendimento -> data do atendimento
+
+- Criação da tabela stg_prescricao:
+
+![image](https://github.com/user-attachments/assets/b90099b9-066c-44cb-9374-c17c67f94393)
+
+> O uso de "FOREIGN KEY" atribui somente um atendimento a uma prescrição, evitando possíveis conflitos futuros
+
 
 # Problema 8
 
