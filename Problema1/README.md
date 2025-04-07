@@ -139,4 +139,6 @@ INNER JOIN (
 
 # Problema 5
 
+# Problema 6
+
 
