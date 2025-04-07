@@ -140,5 +140,17 @@ INNER JOIN (
 # Problema 5
 
 # Problema 6
+## [Resolução em Python](https://github.com/LucasPy1/DesafioEDS/blob/133e4562410aa809299d00abed740f651e6276f9/Problema1/problema6.py)
+![image](https://github.com/user-attachments/assets/370b6558-ae1c-4ee5-a979-209dd33b2810)
+![image](https://github.com/user-attachments/assets/5b81cf6b-4e31-4154-b207-c661e0750e20)
+
+# Problema 7
+
+# Problema 8
+
+# Problema 9
+
+# Problema 10
+
 
 
