@@ -187,14 +187,30 @@ Resolução do desafio 9, relativo à checagem de medicamentos prescritos e no e
 
 
 # Problema 10
+Resolução do último desafio(10), sobre a criação de gŕaficos com base no número de atendimentos. Para isso, usei a biblioteca matplotlib e montei um gráfico de colunas com as datas listadas no código. Abaixo, seguem 2 exemplos de gráficos com diferentes datas:
+
+#### Exemplo 1
+
+![image](https://github.com/user-attachments/assets/deb0bb52-2b21-4bd0-a591-97e5bf8ff400)
+
+![image](https://github.com/user-attachments/assets/6b0620e0-59f8-4a39-baa5-79f58a01d7fb)
+
+#### Exemplo 2
+
+![image](https://github.com/user-attachments/assets/e578d7be-30cf-482c-a5f8-c7fb723a93c0)
+
+![image](https://github.com/user-attachments/assets/03522456-9564-4006-8bfc-d95179f6e2cf)
+
+
+Apesar de simples, esse gráfico seria um ótimo início para uma eventual análise de dados em um consultório, podendo medir seu desempenho e auxiliar na tomada de decisões administrativa.
+
+Futuramente, tanto o banco de dados quanto o gráfico poderiam ser melhorados e integrados de forma a registrar os atendimentos automaticamente e exibir isso em um gráfico de colunas com uma maior, quantidade de dias, sendo um indicador mais preciso e eficiente.
 
 
 
+##[Solução]
 
 
-# Problema 9
-
-# Problema 10
 
 
 
