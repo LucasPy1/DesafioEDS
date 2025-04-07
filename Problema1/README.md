@@ -179,6 +179,10 @@ Depois, devemos criar a consulta SQL responsável por fazer o cálculo da média
 
 Por fim, temos como resultado uma média de 2 medicamentos por atendimento de Urgência.
 
+# Problema 9
+
+# Problema 10
+
 
 
 
