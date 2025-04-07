@@ -139,6 +139,9 @@ INNER JOIN (
 
 
 # Problema 5
+Incompleto
+
+## [Solução]
 
 # Problema 6
 
@@ -187,6 +190,8 @@ Resolução do desafio 9, relativo à checagem de medicamentos prescritos e no e
 
 
 # Problema 10
+##[Solução]
+
 Resolução do último desafio(10), sobre a criação de gŕaficos com base no número de atendimentos. Para isso, usei a biblioteca matplotlib e montei um gráfico de colunas com as datas listadas no código. Abaixo, seguem 2 exemplos de gráficos com diferentes datas:
 
 #### Exemplo 1
@@ -206,9 +211,29 @@ Apesar de simples, esse gráfico seria um ótimo início para uma eventual anál
 
 Futuramente, tanto o banco de dados quanto o gráfico poderiam ser melhorados e integrados de forma a registrar os atendimentos automaticamente e exibir isso em um gráfico de colunas com uma maior, quantidade de dias, sendo um indicador mais preciso e eficiente.
 
+# Referências
+Abaixo, estão algumas referências usadas em problemas específicos e em outros.
 
+Problema 1
+https://www.sqlitetutorial.net/sqlite-date/
+https://www.sqlitetutorial.net/sqlite-cheat-sheet/
+https://www.geeksforgeeks.org/sqlite-insert-into-select/
 
-##[Solução]
+Problema 3
+https://database.guide/6-ways-to-select-duplicate-rows-in-sqlite/
+
+Problema 4
+https://stackoverflow.com/questions/22200587/get-records-for-the-latest-timestamp-in-sqlite
+
+Problema 5
+https://stackoverflow.com/questions/21546739/load-data-from-txt-with-pandas#21546823
+
+Problema 6
+https://www.sqlite.org/foreignkeys.html
+https://stackoverflow.com/questions/1884818/how-do-i-add-a-foreign-key-to-an-existing-sqlite-table
+
+chatgpt.com
+
 
 
 
