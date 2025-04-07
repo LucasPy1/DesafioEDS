@@ -180,6 +180,11 @@ Depois, devemos criar a consulta SQL responsável por fazer o cálculo da média
 Por fim, temos como resultado uma média de 2 medicamentos por atendimento de Urgência.
 
 # Problema 9
+Resolução do desafio 9, relativo à checagem de medicamentos prescritos e no estoque
+## [Solução](https://github.com/LucasPy1/DesafioEDS/blob/3d19d2e3b2e5740246f7bf5e3f70a0fded8f0283/Problemas_codigos/problema9.py)
+
+![image](https://github.com/user-attachments/assets/9949794d-3583-4e20-8aae-0763709dfd8e)
+
 
 # Problema 10
 
