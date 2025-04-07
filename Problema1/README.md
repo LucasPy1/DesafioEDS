@@ -141,7 +141,9 @@ INNER JOIN (
 # Problema 5
 Incompleto
 
-## [Solução]
+## [Solução](https://github.com/LucasPy1/DesafioEDS/blob/ea30ae024ca45a934ae91b4e62dc7d3e7c8f946b/Problemas_codigos/problema5.py)
+
+O mesmo processo se repetirá para os outros arquivos. Para resolver esse desafio, basta ler todos os arquivos da pasta sigtap que têm o nome layout. Com isso, é possível saber em quais partes do texto (posição 1,2...) estarão os dados que precisamos. É possível, então, usar a função strip para extrair somente os dados que queremos, possibilitando a inserção dos mesmos no banco de dados. Após a limpeza dos dados, é necessário fazer a conexão com o banco de dados e criar as respectivas tabelas dos arquivos, as quais necessitam ter os mesmos atributos do arquivo original,  inserindo, por fim, os dados nelas.
 
 # Problema 6
 
@@ -190,7 +192,7 @@ Resolução do desafio 9, relativo à checagem de medicamentos prescritos e no e
 
 
 # Problema 10
-##[Solução]
+## [Solução](https://github.com/LucasPy1/DesafioEDS/blob/ea30ae024ca45a934ae91b4e62dc7d3e7c8f946b/Problemas_codigos/problema10.py)
 
 Resolução do último desafio(10), sobre a criação de gŕaficos com base no número de atendimentos. Para isso, usei a biblioteca matplotlib e montei um gráfico de colunas com as datas listadas no código. Abaixo, seguem 2 exemplos de gráficos com diferentes datas:
 
