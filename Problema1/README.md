@@ -134,19 +134,25 @@ INNER JOIN (
 -- Retorna somente as pessoas com CPFs duplicados  
 ```
 ![image](https://github.com/user-attachments/assets/b2eb2d95-a3e7-4cc3-aee4-dd1378c8124b)
+
 ![image](https://github.com/user-attachments/assets/08656b86-1fa8-4b3b-9c79-37cae77d100f)
 
 
 # Problema 5
 
 # Problema 6
+
 ## [Resolução em Python](https://github.com/LucasPy1/DesafioEDS/blob/4849278e425355786560f5a460e9956c3abf93a4/Problemas_codigos/problema6.py)
+
 ![image](https://github.com/user-attachments/assets/370b6558-ae1c-4ee5-a979-209dd33b2810)
+
 ![image](https://github.com/user-attachments/assets/5b81cf6b-4e31-4154-b207-c661e0750e20)
 
 # Problema 7
+
 Eu modelaria a minha tabela da seguinte forma:
 - Criação da tabela stg_atendimentos:
+
 ![image](https://github.com/user-attachments/assets/07d37edb-4b31-41be-a0ad-2f3ba25be90c)
 
 > tp_atendimento -> tipo do atendimento
@@ -161,6 +167,21 @@ Eu modelaria a minha tabela da seguinte forma:
 
 
 # Problema 8
+Para calcular a média, primeiro devemos inserir dados de teste nas tabelas atendimento e prescrição, respectivamente:
+
+![image](https://github.com/user-attachments/assets/3eefe8ad-d5a4-4937-b7b7-055800d97154)
+
+![image](https://github.com/user-attachments/assets/70edf7ed-cdce-4c16-b78c-5ff1d2301154)
+
+Depois, devemos criar a consulta SQL responsável por fazer o cálculo da média:
+
+![image](https://github.com/user-attachments/assets/7785362f-505c-4c78-b4ff-3261ce789bc2)
+
+Por fim, temos como resultado uma média de 2 medicamentos por atendimento de Urgência.
+
+
+
+
 
 # Problema 9
 
