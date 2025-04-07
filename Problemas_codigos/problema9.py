@@ -16,7 +16,6 @@ def produto_no_estoque(prescricao, armazenado):
     disponiveis = contagem_ocorrencias(armazenado)  # Conta aqueles em estoque
 
     for medicamento, quantidade in med_prescritos.items():
-        # Checa produtos prescritos. Caso o número seja maior que o estoque, False
         if medicamento not in disponiveis or disponiveis[medicamento] < quantidade:
             # Se o medicamento não estiver em estoque ou em quantidade insuficiente
             # Retornará False
